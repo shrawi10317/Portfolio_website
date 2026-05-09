@@ -875,6 +875,10 @@ nav{
 
 }
 
+.contact-section h2{
+  text-align: center;
+}
+
 @media(max-width:500px){
 
   .hero-left h1{
@@ -1049,4 +1053,109 @@ nav{
     padding:10px 0;
   }
 
+}
+
+/* ========================= */
+/* RESPONSIVE FIXES (NO LOGIC CHANGE) */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 992px){
+
+  .hero-content{
+    grid-template-columns:1fr !important;
+    text-align:center;
+    gap:40px;
+  }
+
+  .hero-left{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hero-buttons,
+  .hero-stats{
+    justify-content:center;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+  section{
+    padding:80px 5% !important;
+  }
+
+  .hero-section{
+    padding:100px 5% 60px !important;
+  }
+
+  .hero-left h1{
+    font-size:2.2rem !important;
+  }
+
+  .typing{
+    font-size:1.1rem !important;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+    width:100%;
+    max-width:320px;
+    text-align:center;
+  }
+
+  .stat-box{
+    min-width:110px;
+    padding:14px;
+  }
+
+  #navMenu{
+    position:fixed;
+    top:70px;
+    right:-300px;
+    width:260px;
+    height:100vh;
+    flex-direction:column;
+    background:#020617;
+    padding:40px 25px;
+    gap:25px;
+    transition:0.4s ease;
+    z-index:10000;
+  }
+
+  #navMenu.show{
+    right:0;
+  }
+
+  .hamburger{
+    display:block;
+  }
+}
+
+/* Small phones */
+@media (max-width: 500px){
+
+  .hero-left h1{
+    font-size:1.8rem !important;
+  }
+
+  .typing{
+    font-size:1rem !important;
+  }
+
+  .stat-box h3{
+    font-size:22px;
+  }
+
+  .hero-description{
+    font-size:14px;
+  }
 }
