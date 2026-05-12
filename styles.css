@@ -673,10 +673,18 @@ nav{
   repeat(auto-fit,minmax(320px,1fr));
 
   gap:30px;
+
+  align-items:stretch;
 }
 
 .project-card{
   padding:32px 28px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  min-height:260px;
 }
 
 .project-card h3{
@@ -687,6 +695,12 @@ nav{
 .project-card p{
   color:#94a3b8;
   margin-bottom:28px;
+
+  flex-grow:1;
+}
+
+.project-links{
+  margin-top:auto;
 }
 
 .project-links a{
@@ -1163,3 +1177,5 @@ nav{
     font-size:14px;
   }
 }
+
+
